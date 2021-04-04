@@ -1,4 +1,4 @@
-// module.exports = {
-//     basePath: '/linuxiha',
-//     assetPrefix: '/linuxiha/'
-// }
+module.exports = {
+    basePath: '/linuxiha',
+    assetPrefix: '/linuxiha/'
+}
