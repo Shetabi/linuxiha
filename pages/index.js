@@ -14,7 +14,7 @@ const Home = () => {
 
     return <div className={style.container}>
         <div className={style.navbar}>
-            <div className={style.logo}><img src="/images/logo.png" alt="Linuxiha Logo"/></div>
+            <div className={style.logo}><img src="/linuxiha/images/logo.png" alt="Linuxiha Logo"/></div>
             <ul>
                 <li>
                     <a href="https://www.instagram.com/linuxiha/" target="_blank">
@@ -22,12 +22,12 @@ const Home = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/linuxihaa/" target="_blank">
+                    <a href="https://telegram.me/linuxiha/" target="_blank">
                         <FontAwesomeIcon icon={faTelegramPlane}/>
                     </a>
                 </li>
                 <li>
-                    <a href="https://telegram.me/linuxiha/" target="_blank">
+                    <a href="https://twitter.com/linuxihaa/" target="_blank">
                         <FontAwesomeIcon icon={faTwitter}/>
                     </a>
                 </li>
