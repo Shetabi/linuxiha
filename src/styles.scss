@@ -1,3 +1,20 @@
-body {
-    color: red;
-}
+@font-face {
+    font-family: 'Gandom';
+    
+    src: url("../public/fonts/Gandom.woff2") format("woff2"),
+    url('../public/fonts/Gandom.ttf') format('truetype'),
+      url("../public/fonts/Gandom.woff") format("woff");
+    font-weight: normal;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gandom';
+  }
+  
+  html {
+
+    line-height: 1.8rem;
+  }
