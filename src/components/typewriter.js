@@ -14,6 +14,10 @@ export default function Typewriter(props) {
         return () => clearTimeout(timeout2);
       }, [blink]);
     useEffect(() => {
+         if (index === (props.words.length - 1) && subIndex === props.words[index].length + 1) {
+          return;
+        };
+
         if (
           subIndex === props.words[index].length + 1 &&
           !reverse
@@ -32,16 +36,8 @@ export default function Typewriter(props) {
         setSubIndex((prev) => prev + (reverse ? -1 : 1));
         }, 300);
 
-        if (reverse && index === (props.words.length - 1) && subIndex === 1) {
-            setIndex(0);
-            setSubIndex(0);
-            setReverse(false);
-            return;
-        };
-
         return () => clearTimeout(timeout);
-        }, [subIndex, index, reverse]);
-
+        }, [subIndex, index, reverse, setSubIndex, setIndex, setReverse]);
     return (
         <span>
           {`${props.words[index].substring(0, subIndex)}${blink ? "|" : ""}`}  
