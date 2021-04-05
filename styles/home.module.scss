@@ -1,12 +1,16 @@
+
+@import "mixins";
+
+
 .container {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 
+    position: relative;
     background: url('/linuxiha/images/showcase.jpg') no-repeat;
     background-size: cover;
     background-position-x: 80%;
     z-index: 0;
-    position: relative;
 
     &::after {
         content: "";
@@ -21,16 +25,10 @@
 }
 
 .navbar {
-    height: 60px;
-    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
-    @media screen and (min-width: 600px) {
-        height: 100px;
-    }
 
     .logo {
         width: 100%;
@@ -46,14 +44,14 @@
             height: 50px;
         }
 
-        @media screen and (min-width: 740px) {
+        @include large() {
             img {
                 width: 100px;
                 height: 100px;
             }
         }
 
-        @media screen and (min-width: 600px) and (max-width: 740px) {
+        @include medium() {
             img {
                 width: 70px;
                 height: 70px;
@@ -63,42 +61,33 @@
     }
 
     ul {
-        order: 1;
-        list-style: none;
         height: 100%;
         width: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-
-        li {
-            font-size: 1.3rem;
+        font-size: 5vw;
+        a {
             color: white;
-
-            a {
-                color: white;
-                text-decoration: none;
-                width: 100%;
-                height: 100%;
-
-                &:hover{
-                    color: #ce1919;
-                }
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            &:hover{
+                color: #ce1919;
             }
         }
+        
 
-        @media screen and (min-width: 600px) {
-            height: 100px;
+        @include large() {
+            font-size: 3vw;
+            height: 60vh;
+            width: 7vw;
             position: fixed;
             left: 0;
             top: 30%;
             flex-direction: column;
             height: 50%;
-            width: 60px;
-            li {
-                font-size: 1.8rem;
-            }
             padding: 1rem;
             border-radius: 0 20px 20px 0;
             background-color: rgba(0, 0, 0, 0.4);
@@ -108,38 +97,26 @@
 
 .banner {
     display: flex;
-    width: 100%;
     flex-direction: column;
-    padding-top: 40%;
+    margin-top: 20vh;
     align-items: flex-start;
-    font-size: 2rem;
+    font-size: 6vmin;
     color: white;
     line-height: 4rem;
     padding-right: 10%;
 
     button {
-        margin-top: 20px;
+        font-size: 4vmin;
+        margin-top: 1.3rem;
     }
 
-    @media screen and (min-width: 740px) {
-        padding-top: 5%;
-        font-size: 2.5rem;
-
-        button {
-            margin-top: 20px;
-            padding: 1rem 3rem;
-            font-size: 1.2rem;
+    @media (max-height: 300px) {
+        div:first-of-type {
+            display: none;
         }
     }
 
-    @media screen and (min-width: 600px) and (max-width: 740px) {
-        padding-top: 10%;
-        font-size: 2rem;
-        
-        button {
-            margin-top: 20px;
-            padding: 1rem 3rem;
-            font-size: 0.8rem;
-        }
+    @media (max-height: 500px) {
+        margin-top: 10vmin;
     }
 }

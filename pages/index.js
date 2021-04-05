@@ -1,4 +1,4 @@
-import style from './home.module.scss';
+import style from '../styles/home.module.scss';
 import Typewriter from '../src/components/typewriter';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faTelegramPlane, faTwitter } from "@fortawesome/free-brands-svg-icons";
@@ -35,8 +35,8 @@ const Home = () => {
         </div>
 
         <div className={style.banner}>
-            <div>از توزیع های <Typewriter words={["گنو", "لینوکس"]}/> <br/> بهتر استفاده کنیم</div>
-            <Button color="primary" size="large" variant="contained" onClick={handleClick}>لیست مقالات</Button>
+            <div>از توزیع های <Typewriter words={["لینوکس", "گنو/لینوکس"]}/> <br/> بهتر استفاده کنیم</div>
+            <Button color="primary" size="large" variant="contained" onClick={handleClick}>لیست مطالب</Button>
         </div>
     </div>
 }
