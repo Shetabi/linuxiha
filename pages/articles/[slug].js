@@ -20,6 +20,7 @@ export default function Article({page}) {
           <h2>{customTitle}</h2>
           {/* we'll go into the PrintMarkdown component later */}
           <PrintMarkdown markdown={content} />
+          <address><a rel="author">Author</a></address>
         </div>
       );
 }
@@ -34,6 +35,7 @@ export async function getStaticProps({ params }) {
       'description',
       'customTitle',
       'field',
+      'image',
       'slug',
       'content',
     ]);

@@ -1,8 +1,11 @@
 ---
-title: "Article title"
-description: "Article short description"
+title: "آشنایی با مفاهیم نرم افزار آزاد و متن باز"
+image: "introduction-to-free-softwares/listen-half.jpg"
 timeToRead: "25"
 date: "2020-06-23T02:28:59Z"
+tag: آموزشی
+author: محمد امین قاضی مرادی
+profile: amin-ghmoradi.jpg
 ---
 
 # Heading 1

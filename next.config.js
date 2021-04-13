@@ -1,5 +1,5 @@
 module.exports = {
-    basePath: '/linuxiha',
-    assetPrefix: '/linuxiha/'
+    // basePath: '/linuxiha',
+    // assetPrefix: '/linuxiha/'
 }
 

@@ -12,33 +12,27 @@ const Home = () => {
         router.push('/articles')
       }
 
-    return <div className={style.container}>
-        <div className={style.navbar}>
-            <div className={style.logo}><img src="/linuxiha/images/logo.png" alt="Linuxiha Logo"/></div>
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/linuxiha/" target="_blank">
-                        <FontAwesomeIcon icon={faInstagram}/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://telegram.me/linuxiha/" target="_blank">
-                        <FontAwesomeIcon icon={faTelegramPlane}/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/linuxihaa/" target="_blank">
-                        <FontAwesomeIcon icon={faTwitter}/>
-                    </a>
-                </li>
-            </ul>
-        </div>
+    return <header className={style.container}>
+        <nav className={style.navbar}>
+            <div className={style.logo}><img src="/images/logo.png" alt="Linuxiha Logo"/></div>
+            <section className={style.socials}>
+                <a href="https://www.instagram.com/linuxiha/" target="_blank">
+                    <FontAwesomeIcon icon={faInstagram}/>
+                </a>
+                <a href="https://telegram.me/linuxiha/" target="_blank">
+                    <FontAwesomeIcon icon={faTelegramPlane}/>
+                </a>
+                <a href="https://twitter.com/linuxihaa/" target="_blank">
+                    <FontAwesomeIcon icon={faTwitter}/>
+                </a>
+            </section>
+        </nav>
 
-        <div className={style.banner}>
-            <div>از توزیع های <Typewriter words={["لینوکس", "گنو/لینوکس"]}/> <br/> بهتر استفاده کنیم</div>
+        <section className={style.banner}>
+            <h1>از توزیع های <Typewriter words={["لینوکس", "گنو/لینوکس"]}/> <br/> بهتر استفاده کنیم</h1>
             <Button color="primary" size="large" variant="contained" onClick={handleClick}>لیست مطالب</Button>
-        </div>
-    </div>
+        </section>
+    </header>
 }
 
 export default Home;
