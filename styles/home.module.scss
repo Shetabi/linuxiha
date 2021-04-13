@@ -7,7 +7,7 @@
     height: 100vh;
 
     position: relative;
-    background: url('/linuxiha/images/showcase.jpg') no-repeat;
+    background: url('/images/showcase.jpg') no-repeat;
     background-size: cover;
     background-position-x: 80%;
     z-index: 0;
@@ -60,19 +60,22 @@
             
     }
 
-    ul {
+    .socials {
         height: 100%;
         width: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         font-size: 5vw;
         a {
             color: white;
             text-decoration: none;
             width: 100%;
             height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             &:hover{
                 color: #ce1919;
             }
@@ -88,7 +91,7 @@
             top: 30%;
             flex-direction: column;
             height: 50%;
-            padding: 1rem;
+            padding: 2rem;
             border-radius: 0 20px 20px 0;
             background-color: rgba(0, 0, 0, 0.4);
         }
@@ -100,7 +103,7 @@
     flex-direction: column;
     margin-top: 20vh;
     align-items: flex-start;
-    font-size: 6vmin;
+    font-size: 3vmin;
     color: white;
     line-height: 4rem;
     padding-right: 10%;
@@ -111,7 +114,7 @@
     }
 
     @media (max-height: 300px) {
-        div:first-of-type {
+        h1:first-of-type {
             display: none;
         }
     }
