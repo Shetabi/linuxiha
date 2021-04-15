@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect} from 'react';
+import style from '../../styles/typewriter.module.scss';
 
 export default function Typewriter(props) {
     const [index, setIndex] = useState(0);
@@ -39,8 +40,8 @@ export default function Typewriter(props) {
         return () => clearTimeout(timeout);
         }, [subIndex, index, reverse, setSubIndex, setIndex, setReverse]);
     return (
-        <span>
-          {`${props.words[index].substring(0, subIndex)}${blink ? "|" : ""}`}  
+        <span >
+          {`${props.words[index].substring(0, subIndex)}`} <span className={blink ? style.cursor : ""}>|</span>  
         </span>
     )
 }

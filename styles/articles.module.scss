@@ -1,5 +1,13 @@
+@import "mixins";
+@import "theme";
+
 .container {
-    background-color: #E0E0E0;
+    background-color: $background-color;
     width: 100%;
     height: 100%;
+
+    @include large() {
+        width: 60%;
+        margin: auto;
+    }
 }

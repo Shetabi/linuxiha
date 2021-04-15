@@ -1,4 +1,5 @@
 ---
+id: learning-1
 title: "آشنایی با مفاهیم نرم افزار آزاد و متن باز"
 image: "introduction-to-free-softwares/listen-half.jpg"
 timeToRead: "25"
