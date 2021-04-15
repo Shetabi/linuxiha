@@ -25,7 +25,7 @@ const Header = () => {
             <h2>{path}</h2>
 
             <figure className={style.logo}>
-                <img src="linuxiha/images/logo.png" alt="linuxiha"/>
+                <img src="/linuxiha/images/logo.png" alt="linuxiha"/>
             </figure>
 
         </header>
