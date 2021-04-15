@@ -1,4 +1,5 @@
 ---
+id: news-1
 title: "گذر VLC از مرز سه میلیارد دانلود"
 description: "Article short description2"
 image: "test2/vlc-Metro1.png"
