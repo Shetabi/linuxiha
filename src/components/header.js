@@ -1,31 +1,53 @@
 import React from 'react'
 import style from '../../styles/header.module.scss'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
+import {basePath} from '../next.config';
 
 const Header = () => {
+    let pathName = "";
+
     const router = useRouter();
-    let path = "";
-    switch(router.pathname) {
+    const path = router.pathname;
+    
+    switch(path) {
         case "/":
-            path = "خانه";
+            pathName = "خانه";
             break;
         case "/about":
-            path = "درباره ما"
+            pathName = "درباره ما"
             break;
         case "/articles/news":
-            path = "مطالب خبری";
+            pathName = "مطالب خبری";
             break;
         case "/articles/learning":
-            path = "مطالب آموزشی";
+            pathName = "مطالب آموزشی";
             break;
 
     }
     return (
         <header className={style.container}>
-            <h2>{path}</h2>
+            <h2>{pathName}</h2>
+        <nav className={style.navbar}>
+            <Link className={style["menu-link"]} href="/">
+                <a className={path === "/" ? style.selected : style["menu-item"]}>خانه</a>
+            </Link>
+
+            <Link className={style["menu-link"]} href="/articles/news">
+                <a className={path === "/articles/news" ? style.selected : style["menu-item"]}>خبری</a>
+            </Link>
+
+            <Link className={style["menu-link"]} href="/articles/learning">
+                <a className={path === "/articles/learning" ? style.selected : style["menu-item"]}>آموزشی</a>
+            </Link>
+
+            <Link className={style["menu-link"]} href="/about">
+                <a className={path === "/about" ? style.selected : style["menu-item"]}>درباره ما</a>
+            </Link>
+        </nav>
 
             <figure className={style.logo}>
-                <img src="/linuxiha/images/logo.png" alt="linuxiha"/>
+                <img src={`${basePath}/images/logo.png`} alt="linuxiha"/>
             </figure>
 
         </header>
