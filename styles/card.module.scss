@@ -1,11 +1,13 @@
 @import 'theme.scss';
+@import 'mixins';
 
 .card-container {
     padding: 1rem;
     width: 90%;
-    height: 50vw;
+    height: 50vh;
     margin: 1rem auto;
     position: relative;
+    cursor: pointer;
     color: $text-light;
     background-position: center;
     background-size: cover;
