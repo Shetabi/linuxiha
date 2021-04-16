@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faInfo, faNewspaper, faLightbulb } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from 'next/router'
-import {basePath} from '../next.config';
 
 let prevScrollpos = 0;
 const Menu = () => {

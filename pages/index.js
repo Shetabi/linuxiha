@@ -1,7 +1,7 @@
 import style from '../styles/home.module.scss';
 import Typewriter from '../src/components/typewriter';
 import { useRouter } from 'next/router'
-import {basePath} from '../next.config';
+import {basePath} from '../src/lib/config';
 
 const Home = () => {
     const router = useRouter()

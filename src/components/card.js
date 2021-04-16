@@ -3,7 +3,7 @@ import style from '../../styles/card.module.scss';
 import {faNum, getTimeDifferenceCaption} from '../lib/persian-number';
 import { useRouter } from 'next/router';
 import {getAuthorProfile} from '../lib/authors';
-import {basePath} from '../next.config';
+import {basePath} from '../lib/config';
 
 const Card = (props) => {
     const author = getAuthorProfile(props.post.user);

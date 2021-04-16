@@ -2,7 +2,7 @@ import React from 'react'
 import style from '../../styles/header.module.scss'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import {basePath} from '../next.config';
+import {basePath} from '../lib/config';
 
 const Header = () => {
     let pathName = "";
