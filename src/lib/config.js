@@ -1,4 +1,4 @@
-// const basePath = '/linuxiha'
-const basePath = ''
+const basePath = '/linuxiha'
+// const basePath = ''
 
 export {basePath};

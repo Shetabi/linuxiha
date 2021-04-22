@@ -22,7 +22,7 @@ timeToRead: 5
 
 به طور مثال هنگامی که قصد داریم پراکسی سیستم را در اوبونتو تغییر دهیم چون این یک عمل ممتاز در سیستم است کادر محاوره‌ای به شکل زیر باز شده و رمز کاربری را درخواست می‌کند.
 
-![system_policy-1](/images/system_policy-1.png)
+![system_policy-1](/linuxiha/images/system_policy-1.png)
 
 مشاهده می‌کنید که سیاست سیستم (system policy) پیغام داده که مانع انجام این کار می‌شود مگر این‌که رمز عبور را وارد کنید تا هویت شما تایید شود.
 
@@ -30,7 +30,7 @@ timeToRead: 5
 
 اول از همه گزینه Details در کادر را بزنید تا مشخصات این سیاست دیده شود.
 
-![system-policy-2](/images/system-policy-2.png)
+![system-policy-2](/linuxiha/images/system-policy-2.png)
 
 نام عملی که سیاست سیستم مانع آن می‌شود جلوی Action نوشته شده است. اکنون شما باید دسترسی به این عمل را برای سیستم به‌گونه‌ای تعریف کنید که دیگر نیاز به تایید هویت نباشد.
 
@@ -46,11 +46,11 @@ sudo gedit /usr/share/polkit-1/actions/com.ubuntu.systemservice.policy
 
 در فایل باز شده عمل مورد نظر خود را پیدا می‌کنیم (در اینجا setproxy).
 
-![system_policy-3](/images/system_policy-3.png)
+![system_policy-3](/linuxiha/images/system_policy-3.png)
 
 خب حالا هر تغییری که دوست داریم روی تگ‌های داخل defaults انجام می‌دهیم. مثلا کافیست به‌جای no در تگ allow_inactive و به‌جای auth_admin_keep در تگ allow_active عبارت yes را بنویسیم (مانند تصویر زیر) تا دیگر برای تغییر پراکسی سیستم نیاز به اهراز هویت نداشته باشیم.
 
-![system_policy-4](/images/system_policy-4.png)
+![system_policy-4](/linuxiha/images/system_policy-4.png)
 
 * البته این تغییرات همیشه پیشنهاد نمی‌شود اما در برخی موارد که راحتی به امنیت ارجعیت دارد بسیار سودمند است.
 
