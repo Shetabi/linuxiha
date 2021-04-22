@@ -28,14 +28,14 @@ const Home = () => {
         <section className={style.social}>
             <ul>
                 <li> <a href="https://www.instagram.com/linuxiha" target="_blank">
-                    <img src="/icons/instagram.png" alt="linuxiha-instagram"/></a> 
+                    <img src={`${basePath}/icons/instagram.png`} alt="linuxiha-instagram"/></a> 
                     <div className={style.socialdesc}>
                         <h2>اینستاگرام لینوکسی ها</h2>
                         <p>با عضویت در اینستاگرام لینوکسی ها از آخرین اخبار و مقالات مطلع شوید</p>
                     </div>
                 </li>
                 <li> <a href="https://telegram.me/linuxiha" target="_blank">
-                    <img src="/icons/telegram.png" alt="linuxiha-telegram"/></a> 
+                    <img src={`${basePath}/icons/telegram.png`} alt="linuxiha-telegram"/></a> 
                     <div className={style.socialdesc}>
                         <h2>تلگرام لینوکسی ها</h2>
                         <p>در تلگرام لینوکسی ها علاوه بر دریافت آخرین اخبار و مقالات، میتوانید در گروه های مباحثه و پرسش و پاسخ عضو شوید</p>
@@ -43,7 +43,7 @@ const Home = () => {
                 </li>
                 <li> 
                     <a href="https://twitter.com/linuxihaa" target="_blank">
-                    <img src="/icons/twitter.png" alt="linuxiha-twitter"/></a>
+                    <img src={`${basePath}/icons/twitter.png`} alt="linuxiha-twitter"/></a>
                     <div className={style.socialdesc}>
                         <h2>توییتر لینوکسی ها</h2>
                         <p>در توییتر لینوکسی ها از آخرین اخبار لینوکس مطلع شوید</p>
