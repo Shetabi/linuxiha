@@ -32,16 +32,16 @@ sudo apt-get install -y ubuntu-gnome-desktop
 ```
 
 بعد از اینکه دانلود به اتمام رسید او شما پیام می‌دهد که شما می‌خواهید صفحه‌ی بالا آمدن سیستم‌تان چه شکلی باشد.
-![LightdmVSGdm3]({{ site.imgurl }}/LightdmVSGdm3.jpg)
+![LightdmVSGdm3](/images/LightdmVSGdm3.jpg)
 
 اگر گزینه‌ی lightdm را انتخاب کنید مثل قبل باقی می‌ماند ولی اگر gdm را انتخاب کنید. بعد از بوت سیستم با این صفحه مواجع می‌شوید.
-![GDM-LoginForm]({{ site.imgurl }}/GDM-LoginFrom.jpg)
+![GDM-LoginForm](/images/GDM-LoginFrom.jpg)
 این دیگر به شما بستگی دارد. ولی من gdm رو بیش‌تر می‌پسندم. حالا دیگر گزینه‌ی مورد نظر را انتخاب کنید و بعد از نصب کامل سیستم خود را ریبوت کنید. 
 اگر در هنگام نصب gdm را انتخاب کرده‌اید ابتدا روی یوزر خود کلیک کنید و بعد آیکن تنظیمات را فشار دهید و بعد Gnome را انتخاب کنید.
 
-![GDM-LoginForm2]({{ site.imgurl }}/GDM-LoginForm2.jpg)
+![GDM-LoginForm2](/images/GDM-LoginForm2.jpg)
 ولی اگر lightdm را انتخاب کرده‌اید بر روی عکس اوبونتو کلیک کنید و Gnome را انتخاب کنید.
-![LightDM]({{ site.imgurl }}/LightDM.jpg)
+![LightDM](/images/LightDM.jpg)
 حالا شما میزکار گنوم را نصب کرده‌اید. اکنون باید پلاگین‌ها را نصب کنید. برای این کار ترمینال را باز کنید و متن زیر را تاپ کنید.
 
 ```sh
@@ -57,7 +57,7 @@ gnome-tweak-tool
 
 البته اگر از ورژن اوبونتوی ۱۶.۰۴ استفاده نمی‌کنید جای xUbuntu_xx.xx ورژن اوبونتوی خود را قرار دهید.
 حال با چنین پنجره‌ای مواجع می‌شوید.
-![Gnome-Tweark-Tool]({{ site.imgurl }}/Gnome-Tweark-Tool.jpg)
+![Gnome-Tweark-Tool](/images/Gnome-Tweark-Tool.jpg)
 حالا شما امکان این رو دارید که گنوم خود را شخصی‌سازی کنید.
 در قسمت GTK+ شما باید Arc را انتخاب کنید.
 در قسمت Icons شما به دلخواه یکی را انتخاب کنید.
@@ -72,6 +72,6 @@ gnome-tweak-tool
 حالا به قسمت Desktop بروید و Icons on Desktop را فعال کنید.
 بعد به قسمت Windows بروید و maximize و minimize را نیز فعال کنید.
 حال سیستم را ریبوت کنید و دوباره لاگین کنید. و از دسکتاپ زورین لذت ببرید
-![Gnome-Tweark-Tool]({{ site.imgurl }}/ZorinSessionOnUbuntu.jpg)
-![Gnome-Tweark-Tool]({{ site.imgurl }}/ZorinSessionOnUbuntu2.jpg)
-![Gnome-Tweark-Tool]({{ site.imgurl }}/ZorinSessionOnUbuntu3.jpg)
+![Gnome-Tweark-Tool](/images/ZorinSessionOnUbuntu.jpg)
+![Gnome-Tweark-Tool](/images/ZorinSessionOnUbuntu2.jpg)
+![Gnome-Tweark-Tool](/images/ZorinSessionOnUbuntu3.jpg)

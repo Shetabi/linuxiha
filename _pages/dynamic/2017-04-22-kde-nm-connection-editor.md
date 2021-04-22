@@ -19,7 +19,7 @@ timeToRead: 5
 در محیط ویندوز نرم‌افزارهایی مانند connectify و ... وجود دارد که با استفاده از کارت شبکه وایرلس شما، شبکه و اینترنت شما روی وایرلس به اشتراک می‌گذارد.
 در محیط اوبونتو نیز میتوان این امر را با استفاده از `kde nm connection editor` انجام داد.
 
-![kde nm connection editor]({{ site.imgurl }}/kde-nm-connection-editor.png )
+![kde nm connection editor](/images/kde-nm-connection-editor.png )
 
 ### پیش‌نیاز ها
 
@@ -41,24 +41,24 @@ sudo apt-get install plasma-nm
 
 بعد از نصب پکیج مربوطه alt+f2 بزنید.
 و متن kde-nm-connection-editor جستوجو کنید و روی اولین گزینه کلیک کنید.
-![kde nm connection editor search]({{ site.imgurl }}/kde-nm1.png )
+![kde nm connection editor search](/images/kde-nm1.png )
 
 
 
 
 بعد باز شدن برنامه بر روی گزینه add کلیک کنید و بر روی Wireless(shared) کلیک کنید.
-![kde nm connection editor open]({{ site.imgurl }}/kde-nm2.png )
+![kde nm connection editor open](/images/kde-nm2.png )
 
 
 
 
 در صفحه جدید تنظیمات وایرلس خود مانند نام، رمز عبور، نوع رمزنگاری و غیره را تعیین کنید.
-![kde nm connection editor create]({{ site.imgurl }}/kde-nm3.png )
+![kde nm connection editor create](/images/kde-nm3.png )
 
 
 
 بعد از ساخته شدن کانکشن در نوار بالا بر روی منو شبکه unity کلیک کنید و گزینه Connect to Hidden Wi-Fi network کلیک کنید و در صفحه جدید  کانکشنی که ساختید را انتخاب کنید.
-![kde nm connection editor create]({{ site.imgurl }}/kde-nm4.png )
+![kde nm connection editor create](/images/kde-nm4.png )
 
 
 در صورتی که تمام مراحل را به درستی انجام داده باشید و ارتباط کارت شبکه های شما توسط سیستم عامل شناسایی شده باشند، وایرلس شما ساخته شده است و دستگاه های خود را میتوانید به آن متصل کنید.

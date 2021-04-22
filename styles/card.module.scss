@@ -1,78 +1,90 @@
-@import 'theme.scss';
-@import 'mixins';
+// @import 'theme.scss';
+// @import 'mixins';
 
-.card-container {
-    padding: 1rem;
-    width: 90%;
-    height: 50vh;
-    margin: 1rem auto;
-    position: relative;
-    cursor: pointer;
-    color: $text-light;
-    background-position: center;
-    background-size: cover;
-    max-height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    z-index: 0;
-    border-radius: 20px;
-
-    &::after {
-        margin: auto;
-        width: 90%;
-        height: 100px;
-        content: "";
-        width: 100%;
-        height: 100%;
-        background-color: $overlay;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        border-radius: 20px;
-    }
+.media {
+    height: 300px;
 }
 
-.card-info{
-    display: flex;
-    flex-direction: column;
+.card {
+    margin: 1.5rem;
 }
 
-.card__title {
-    position: relative;
-    margin-top: 2rem;
-    font-size: 1.2rem;
-    font-weight: 500;
+.avatar {
+    margin-left: 0.5rem;
 }
 
-.author-image {
-    display: flex;
-    flex-direction: row;
-    img {
-        width: 50px;
-        height: 50px;
-        border-radius: 25px;
-        margin-left: 0.5rem;
-    }
+// .card-container {
+//     padding: 1rem;
+//     width: 90%;
+//     height: 50vh;
+//     margin: 1rem auto;
+//     position: relative;
+//     cursor: pointer;
+//     color: $text-light;
+//     background-position: center;
+//     background-size: cover;
+//     max-height: 200px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     z-index: 0;
+//     border-radius: 20px;
 
-    figcaption {
-        position: relative;
-        top: -0.2rem;
-        font-size: 0.8rem;
-    }
-}
+//     &::after {
+//         margin: auto;
+//         width: 90%;
+//         height: 100px;
+//         content: "";
+//         width: 100%;
+//         height: 100%;
+//         background-color: $overlay;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         z-index: -1;
+//         border-radius: 20px;
+//     }
+// }
 
-.article-info {
-    font-size: 0.7rem;
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    margin-right: 3.8rem;
-    top: -1.8rem;
-    font-size: 0.5rem;
+// .card-info{
+//     display: flex;
+//     flex-direction: column;
+// }
 
-    span:first-child {
-        margin-left: 1rem;
-    }
-}
+// .card__title {
+//     position: relative;
+//     margin-top: 2rem;
+//     font-size: 1.2rem;
+//     font-weight: 500;
+// }
+
+// .author-image {
+//     display: flex;
+//     flex-direction: row;
+//     img {
+//         width: 50px;
+//         height: 50px;
+//         border-radius: 25px;
+//         margin-left: 0.5rem;
+//     }
+
+//     figcaption {
+//         position: relative;
+//         top: -0.2rem;
+//         font-size: 0.8rem;
+//     }
+// }
+
+// .article-info {
+//     font-size: 0.7rem;
+//     display: flex;
+//     position: relative;
+//     flex-direction: row;
+//     margin-right: 3.8rem;
+//     top: -1.8rem;
+//     font-size: 0.5rem;
+
+//     span:first-child {
+//         margin-left: 1rem;
+//     }
+// }
