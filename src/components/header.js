@@ -17,10 +17,10 @@ const Header = () => {
         case "/about":
             pathName = "درباره ما"
             break;
-        case "/articles/news":
+        case "/news":
             pathName = "مطالب خبری";
             break;
-        case "/articles/learning":
+        case "/learning":
             pathName = "مطالب آموزشی";
             break;
 
@@ -33,12 +33,12 @@ const Header = () => {
                 <a className={path === "/" ? style.selected : style["menu-item"]}>خانه</a>
             </Link>
 
-            <Link className={style["menu-link"]} href="/articles/news">
-                <a className={path === "/articles/news" ? style.selected : style["menu-item"]}>خبری</a>
+            <Link className={style["menu-link"]} href="/news">
+                <a className={path === "/news" ? style.selected : style["menu-item"]}>خبری</a>
             </Link>
 
-            <Link className={style["menu-link"]} href="/articles/learning">
-                <a className={path === "/articles/learning" ? style.selected : style["menu-item"]}>آموزشی</a>
+            <Link className={style["menu-link"]} href="/learning">
+                <a className={path === "/learning" ? style.selected : style["menu-item"]}>آموزشی</a>
             </Link>
 
             <Link className={style["menu-link"]} href="/about">

@@ -2,6 +2,8 @@ const withPWA = require('next-pwa')
 
 module.exports = withPWA(
   {
+    // basePath: '',
+    // assetPrefix: '',
     basePath: '/linuxiha',
     assetPrefix: '/linuxiha/',
     webpack: function (config) {

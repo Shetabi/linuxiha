@@ -19,7 +19,7 @@ timeToRead: 5
 
 همونطور که توی تصویر زیر می‌بینین، یه دسکتاپ گنوم ساده که معمولا پیش‌فرض رو لینوکس‌ها نصبه، می‌تونه چقدر عوض بشه! البته این چیزی که تو عکس می‌بینین خیلی کم روش تغییر دادیم!
 
-![gnome tweak tool]({{ site.imgurl }}/gnome-1-final.jpg)
+![gnome tweak tool](/linuxiha/images/gnome-1-final.jpg)
 
 ### پیش‌نیاز ها
 
@@ -63,13 +63,13 @@ sudo apt-get install plank
 
 ### بکگراندهای پیشنهادی
 
-![بگکراند پیشنهادی ۱]({{ site.imgurl }}/gnome-1-bg1.jpg)
+![بگکراند پیشنهادی ۱](/linuxiha/images/gnome-1-bg1.jpg)
 
-![بگکراند پیشنهادی ۲]({{ site.imgurl }}/gnome-1-bg2.jpg)
+![بگکراند پیشنهادی ۲](/linuxiha/images/gnome-1-bg2.jpg)
 
-![بگکراند پیشنهادی ۳]({{ site.imgurl }}/gnome-1-bg3.jpg)
+![بگکراند پیشنهادی ۳](/linuxiha/images/gnome-1-bg3.jpg)
 
-![بگکراند پیشنهادی ۴]({{ site.imgurl }}/gnome-1-bg4.jpg)
+![بگکراند پیشنهادی ۴](/linuxiha/images/gnome-1-bg4.jpg)
 
 
 این پست برای اولین بار در [هگز - شخصی‌سازی دسکتاپ گنوم](http://h4x.ir/3) نوشته شده‌است!

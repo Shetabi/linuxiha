@@ -8,7 +8,7 @@ const Home = () => {
 
     return <section className={style.container}>
         <section className={style.banner}>
-            <h2>از توزیع های <Typewriter words={["لینوکس", "گنو/لینوکس"]}/> <br/>بهتر استفاده کنیم</h2>
+            <h2>از توزیع های <Typewriter words={["لینوکس", "گنو / لینوکس"]}/> <br/>بهتر استفاده کنیم</h2>
         </section>
 
         <div className={style.features}>
@@ -24,6 +24,33 @@ const Home = () => {
                 <p>مطالب آموزشی و خبری بنویس و در لینوکسی ها منتشر کن</p>
             </section>
         </div>
+
+        <section className={style.social}>
+            <ul>
+                <li> <a href="https://www.instagram.com/linuxiha" target="_blank">
+                    <img src="/icons/instagram.png" alt="linuxiha-instagram"/></a> 
+                    <div className={style.socialdesc}>
+                        <h2>اینستاگرام لینوکسی ها</h2>
+                        <p>با عضویت در اینستاگرام لینوکسی ها از آخرین اخبار و مقالات مطلع شوید</p>
+                    </div>
+                </li>
+                <li> <a href="https://telegram.me/linuxiha" target="_blank">
+                    <img src="/icons/telegram.png" alt="linuxiha-telegram"/></a> 
+                    <div className={style.socialdesc}>
+                        <h2>تلگرام لینوکسی ها</h2>
+                        <p>در تلگرام لینوکسی ها علاوه بر دریافت آخرین اخبار و مقالات، میتوانید در گروه های مباحثه و پرسش و پاسخ عضو شوید</p>
+                    </div>
+                </li>
+                <li> 
+                    <a href="https://twitter.com/linuxihaa" target="_blank">
+                    <img src="/icons/twitter.png" alt="linuxiha-twitter"/></a>
+                    <div className={style.socialdesc}>
+                        <h2>توییتر لینوکسی ها</h2>
+                        <p>در توییتر لینوکسی ها از آخرین اخبار لینوکس مطلع شوید</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
     </section>
 }
 

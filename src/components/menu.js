@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faInfo, faNewspaper, faLightbulb } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from 'next/router'
+import {basePath} from '../lib/config'
 
 let prevScrollpos = 0;
 const Menu = () => {
@@ -27,19 +28,27 @@ const Menu = () => {
     return (
         <nav id="navbar" className={style["menu-container"]}>
             <Link className={style["menu-link"]} href="/">
-                <a className={path === "/" ? style.selected : style["menu-item"]}><FontAwesomeIcon icon={faHome}/><aside></aside></a>
+                <a className={path === "/" ? style.selected : style["menu-item"]}> 
+                <img src={`${basePath}/icons/home.png`} alt="home"/> <span>خانه</span> <aside></aside>
+                </a>
             </Link>
 
-            <Link className={style["menu-link"]} href="/articles/news">
-                <a className={path === "/articles/news" ? style.selected : style["menu-item"]}><FontAwesomeIcon icon={faNewspaper}/><aside></aside></a>
+            <Link className={style["menu-link"]} href="/news">
+                <a className={path === "/news" ? style.selected : style["menu-item"]}>
+                <img src={`${basePath}/icons/news.png`} alt="news"/> <span>خبری</span> <aside></aside>
+                </a>
             </Link>
 
-            <Link className={style["menu-link"]} href="/articles/learning">
-                <a className={path === "/articles/learning" ? style.selected : style["menu-item"]}><FontAwesomeIcon icon={faLightbulb}/><aside></aside></a>
+            <Link className={style["menu-link"]} href="/learning">
+                <a className={path === "/learning" ? style.selected : style["menu-item"]}>
+                <img src={`${basePath}/icons/article.png`} alt="article"/> <span>آموزشی</span> <aside></aside>
+                    </a>
             </Link>
 
             <Link className={style["menu-link"]} href="/about">
-                <a className={path === "/about" ? style.selected : style["menu-item"]}><FontAwesomeIcon icon={faInfo}/><aside></aside></a>
+                <a className={path === "/about" ? style.selected : style["menu-item"]}>
+                    <img src={`${basePath}/icons/info.png`} alt="info"/> <span>درباره ما</span> <aside></aside>
+                </a>
             </Link>
         </nav>
     )

@@ -59,12 +59,12 @@ make
 ۸- یک آنتن کوچک درست کنید. (هر چه کیفیت آنتن بهتر باشد محدوده‌ی بیش‌تری را به خود اختصاص می‌دهد و اگر درست نکنید شاید تا ۲متر برود.)  
 ۹- سیم جامپر را از وسط بریده و سیم قسمت مادگی آن را با چسب به آنتن بچسبانید.  
 
-![JumperWithAntenna]({{ site.imgurl }}/JumperWithAntenna.jpg)
+![JumperWithAntenna](/linuxiha/images/JumperWithAntenna.jpg)
 
 ۱۰- سیم جامپر و آنتن را در GPIO 4 دستگاهتان قرار دهید. GPIO در رسپبری پای ۳ در این مکان قرار دارد.  
 
-![GPIO4-RPi3]({{ site.imgurl }}/GPIO4-RPi3.jpg)
-![JumperOnGPIO4]({{ site.imgurl }}/JumperOnGPIO4.jpg)
+![GPIO4-RPi3](/linuxiha/images/GPIO4-RPi3.jpg)
+![JumperOnGPIO4](/linuxiha/images/JumperOnGPIO4.jpg)
 
 ۱۱- برای اجرا موسیقی با فرمت WAV در ترمینال چنین تایپ کنید. (به جای x نام فایل مورد نظر و به جای y فرکانس مورد نظر را قرار دهید.)
 

@@ -1,7 +1,7 @@
 import React from 'react'
-import style from '../../../styles/articles.module.scss';
-import { getAllDynamicPages} from '../../../src/lib/markdown-utils';
-import Card from '../../../src/components/card';
+import style from '../../styles/articles.module.scss';
+import { getAllDynamicPages} from '../../src/lib/markdown-utils';
+import ArticleCard from '../../src/components/card';
 import moment from 'jalali-moment'
 
 const Learning = (props) => {
@@ -14,7 +14,7 @@ const Learning = (props) => {
                 .sort(function(a,b){
                         return new Date(b.jdate) - new Date(a.jdate);
                     })
-                .map(post => {return {...post, jdate: moment(post.jdate, 'jYYYY-jMM-jDD')}}).map(post => <Card key={post.title} post={post}/>)}
+                .map(post => {return {...post, jdate: moment(post.jdate, 'jYYYY-jMM-jDD')}}).map(post => <ArticleCard key={post.title} post={post}/>)}
         </div>
     )
 }

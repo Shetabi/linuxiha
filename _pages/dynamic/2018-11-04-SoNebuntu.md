@@ -4,7 +4,7 @@ jdate: '1397-08-13'
 user: mirsamantajbakhsh
 title: اوبونتو برای تحلیلگران شبکه‌های اجتماعی
 categories:
-- آموزش
+- آموزشی
 tags:
 - اوبونتو
 featured: SoNebuntu.jpg  
@@ -17,7 +17,7 @@ timeToRead: 5
 
 توزیع SoNebuntu توزیعی بر پایه لینوکس است که مخصوص تحلیل‌گران شبکه‌های اجتماعی تولید شده است. این توزیع شامل ابزارهای مخصوص تحلیل شبکه‌های اجتماعی و ابزارهای جمع‌آوری داده از سایت‌های اینترنتی است.
 
-![SoNebuntu]({{ site.imgurl }}/SoNebuntu.jpg)
+![SoNebuntu](/linuxiha/images/SoNebuntu.jpg)
 
 این توزیع در دو نسخه کامل و سبک تولید شده است که از نظر ابزار تحلیل شبکه‌های اجتماعی و ابزارهای جمع آوری داده تفاوتی ندارند ولی در مورد ابزارهای غیر ضروری مانند ابزار LibreOffice که معادل Microsoft Office در سیستم لینوکس است، حذف شده‌اند تا میزان استفاده توزیع از منابع سیستمی کاهش یافته و تحلیل داده‌های بزرگ به راحتی انجام شود
 
@@ -50,5 +50,5 @@ timeToRead: 5
 - دربافت، حمایت مالی و توضیحات بیشتر [SoNebuntu](https://sonebuntu.com)
 - رای به این توزیع [DistroWatch](https://distrowatch.com/dwres.php?resource=faq)
 
-![SoNebuntu]({{ site.imgurl }}/DistroWatch.jpg)
+![SoNebuntu](/linuxiha/images/DistroWatch.jpg)
 

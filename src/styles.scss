@@ -40,3 +40,17 @@
     position: fixed;
     bottom: 0;
   }
+
+  ::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+   }
+ 
+  ::-webkit-scrollbar-thumb {
+    background-color: #e95420;
+    border-radius: 3px;
+ 
+    &:hover {
+    background: #e95420;
+    }
+}

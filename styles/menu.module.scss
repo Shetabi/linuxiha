@@ -31,6 +31,22 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+            backface-visibility: hidden;
+            transition: linear transform 0.5s;
+        }
+
+        span {
+            font-size: 1rem;
+            padding-bottom: 0.8rem;
+            position: absolute;
+            transform: rotateX(180deg);
+            backface-visibility: hidden;
+            transition: linear transform 0.5s;
+        }
     }
 
     aside {
@@ -44,8 +60,6 @@
 
     .menu-item {
         color: gray;
-
-
     }
 
     .selected {
@@ -54,6 +68,15 @@
         aside {
             background-color: $primary;
             box-shadow: 0px 0px 15px 2px $primary;
+        }
+
+        img {
+            transform: rotateX(180deg);
+        }
+
+        span {
+            transform: rotateX(0deg);
+            margin-bottom: 0.5rem;
         }
     }
 }
