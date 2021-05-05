@@ -3,6 +3,7 @@ import Typewriter from '../src/components/typewriter';
 import { useRouter } from 'next/router'
 import {basePath} from '../src/lib/config';
 import { NextSeo } from 'next-seo';
+import Image from 'next/image';
 
 const Home = () => {
     const router = useRouter()
@@ -19,13 +20,27 @@ const Home = () => {
 
             <div className={style.features}>
                 <section className={style.feature}>
-                    <img src={`${basePath}/images/support-articles.png`} alt="support"/>
+                    <Image
+                        className={style.media}
+                        src={`${basePath}/images/support-articles.png`}
+                        alt="support"
+                        width="200"
+                        height="160"
+                        layout="responsive"
+                    />
                     <h3>حامی شو</h3>
                     <p>علاوه بر حمایت از نویسنده، محصولات خودت رو تبلیغ کن</p>
                 </section>
 
                 <section className={style.feature}>
-                <img src={`${basePath}/images/create-article.png`} alt="support"/>
+                <Image
+                        className={style.media}
+                        src={`${basePath}/images/create-article.png`}
+                        alt="create article"
+                        width="200"
+                        height="150"
+                        layout="responsive"
+                    />
                     <h3>نویسنده شو</h3>
                     <p>مطالب آموزشی و خبری بنویس و در لینوکسی ها منتشر کن</p>
                 </section>

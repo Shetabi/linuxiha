@@ -3,6 +3,7 @@ import style from '../../styles/header.module.scss'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import {basePath} from '../lib/config';
+import Image from 'next/image';
 
 const Header = () => {
     let pathName = "";
@@ -47,7 +48,14 @@ const Header = () => {
         </nav>
 
             <figure className={style.logo}>
-                <img src={`${basePath}/images/logo.png`} alt="linuxiha"/>
+                <Image
+                    className={style.media}
+                    src={`${basePath}/images/logo.png`}
+                    alt="linuxiha-logo"
+                    width="50"
+                    height="50"
+                    layout="intrinsic"
+                />
             </figure>
 
         </header>

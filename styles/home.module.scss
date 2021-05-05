@@ -63,10 +63,6 @@
     }
 
     @include large() {
-        // height: 60vh;
-        // background-position-y: 100%;
-        // background-size: 800px 600px;
-        // align-items: flex-end;
         h2 {
             font-size: 1.3rem;
             top: 1.5rem;

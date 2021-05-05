@@ -12,6 +12,7 @@ import {getAuthorProfile} from '../../src/lib/authors';
 import moment from 'jalali-moment'
 import ArticleProgress from '../../src/components/ArticleProgress';
 import { NextSeo } from 'next-seo';
+import Image from 'next/image'
 
 export default function Article({page}) {
     const router = useRouter();
@@ -40,7 +41,14 @@ export default function Article({page}) {
               description={description}
           />
           <Paper className={style.article}>
-            <img src={postImage} alt={title}/>
+            <Image
+                    className={style.media}
+                    src={postImage}
+                    alt={title}
+                    width="731"
+                    height="341"
+                    layout="responsive"
+                />
             <h1>{title}</h1>
               <CardHeader
                 avatar={

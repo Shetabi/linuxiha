@@ -11,6 +11,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+import Image from 'next/image'
 
 const ArticleCard = (props) => {
     const author = getAuthorProfile(props.post.user);
@@ -33,11 +34,13 @@ const ArticleCard = (props) => {
               subheader={`${faNum(getTimeDifferenceCaption(props.post.jdate))} - ${faNum(`زمان خواندن ${props.post.timeToRead} دقیقه`)}`}
             />
             <CardActionArea>
-                <CardMedia
+                <Image
                     className={style.media}
-                    image={postImage}
+                    src={postImage}
                     alt={props.post.title}
-                    title={props.post.title}
+                    width="500"
+                    height="300"
+                    layout="responsive"
                 />
                 <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
