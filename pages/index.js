@@ -48,7 +48,7 @@ const Home = () => {
 
             <section className={style.social}>
                 <ul>
-                    <li> <a href="https://www.instagram.com/linuxiha" target="_blank">
+                    <li> <a rel="noopener noreferrer nofollow" href="https://www.instagram.com/linuxiha" target="_blank">
                         <img src={`${basePath}/icons/instagram.png`} alt="linuxiha instagram"/></a> 
                         <div className={style.socialdesc}>
                             <h2>اینستاگرام لینوکسی ها</h2>
@@ -63,7 +63,7 @@ const Home = () => {
                         </div>
                     </li>
                     <li> 
-                        <a href="https://twitter.com/linuxihaa" target="_blank">
+                        <a rel="noopener noreferrer nofollow" href="https://twitter.com/linuxihaa" target="_blank">
                         <img src={`${basePath}/icons/twitter.png`} alt="linuxiha twitter"/></a>
                         <div className={style.socialdesc}>
                             <h2>توییتر لینوکسی ها</h2>
@@ -71,7 +71,7 @@ const Home = () => {
                         </div>
                     </li>
                     <li> 
-                        <a href="https://github.com/linuxihaa/" target="_blank">
+                        <a rel="noopener noreferrer nofollow" href="https://github.com/linuxihaa/" target="_blank">
                         <img src={`${basePath}/icons/github.png`} alt="linuxiha github"/></a>
                         <div className={style.socialdesc}>
                             <h2>گیت هاب لینوکسی ها</h2>
