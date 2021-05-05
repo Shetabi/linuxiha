@@ -1,23 +1,25 @@
 import React from 'react';
-import unified from 'unified';
-import parse from 'remark-parse';
-import remark2react from 'remark-react';
-import render from 'remark-render';
-import renderer from 'remark-react-renderer';
+import ReactMarkdown from 'react-markdown';
+import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
+import {dracula} from 'react-syntax-highlighter/dist/cjs/styles/prism';
+
+const components = {
+  code({node, inline, className, children, ...props}) {
+    const match = /language-(\w+)/.exec(className || '')
+    return !inline && match ? (
+      <SyntaxHighlighter style={dracula} language={match[1]} PreTag="pre" children={String(children).replace(/\n$/, '')} {...props} />
+    ) : (
+      <code className={className} {...props} />
+    )
+  }
+}
+
 export default function PrintMarkdown({ markdown }) {
   const h = React.createElement;
-  const content = unified()
-    .use(parse)
-    .use(render, {
-      renderer: renderer,
-      p: h
-    })
-    .use(remark2react)
-    .processSync(markdown).result;
 
   return (
-    <div>
-      {content}
-    </div>
+    <ReactMarkdown components={components}>
+      {markdown}
+    </ReactMarkdown>
   );
 }

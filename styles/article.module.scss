@@ -19,11 +19,10 @@
         margin: 1rem auto;
         direction: ltr;
         font-family: "Courier New";
-        background-color: #300a24;
-        color: white;
-        padding: 1rem;
-        border-radius: 5px;
+        padding: 0.2rem 0.5rem;
+        border-radius: 15px;
         overflow: auto;
+        border-radius: 10px;
 
         &::-webkit-scrollbar {
             width: 0.5em;
@@ -38,11 +37,7 @@
             background: #e95420;
             }
         }
-
-        &::before {
-            content: 'linuxiha:~$ ';
-            color: #88DD34;
-        }
+        
     }
 
     .text {
