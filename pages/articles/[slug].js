@@ -30,11 +30,11 @@ export default function Article({page}) {
       } = page;
 
       const author = getAuthorProfile(page.user);
-      const postImage = `${basePath}/images/${page.featured}`;
+      const postImage = `${basePath}/images/${featured}`;
       const profileImage = author.image;
       return (
         <Paper className={style.article}>
-          <img src={`${basePath}/images/${featured}`} alt=""/>
+          <img src={`${basePath}/images/${featured}`} alt={title}/>
           <h1>{title}</h1>
             <CardHeader
               avatar={
@@ -45,7 +45,6 @@ export default function Article({page}) {
               subheader={`${faNum(getTimeDifferenceCaption(page.jdate))} - ${faNum(`زمان خواندن ${page.timeToRead} دقیقه`)}`}
             />
          <section className={style.content}>
-            {/* we'll go into the PrintMarkdown component later */}
             <PrintMarkdown markdown={content} />
          </section>
          <ArticleProgress/>

@@ -45,6 +45,17 @@
         }
     }
 
+    .text {
+        background-color: $code;
+        li {
+            padding-right: 1rem;
+        }
+    }
+
+    ul {
+        list-style-type: circle;
+    }
+
     h1 {
         margin: 0.5rem 0.5rem 0 0;
         font-size: 1.5rem;
