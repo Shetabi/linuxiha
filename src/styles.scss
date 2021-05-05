@@ -36,6 +36,13 @@
     text-decoration: none;
   }
 
+  .link {
+      color: #ce1919;
+      &:hover {
+          text-decoration: underline;
+      }
+  }
+
   .menu {
     position: fixed;
     bottom: 0;
