@@ -23,21 +23,6 @@ const ArticleCard = (props) => {
   }
 
     return (
-        // <section onClick={onClick} className={style['card-container']} style={{backgroundImage: `url(${postImage})`}}>
-        //     <h2 className={style.card__title}>{props.post.title}</h2>
-            
-        //     <div className={style['card-info']}>
-        //         <figure className={style['author-image']}>
-        //              <img src={profileImage} alt={author.name}/>
-        //              <figcaption>{author.name}</figcaption>
-        //          </figure>
-        //          <aside className={style['article-info']}>
-        //              <span>{faNum(`زمان خواندن ${props.post.timeToRead} دقیقه`)}</span>
-        //              <span>{faNum(getTimeDifferenceCaption(props.post.jdate))}</span>
-        //          </aside>
-        //     </div>
-        // </section>
-
         <Card onClick={onClick} className={style.card}>
             <CardHeader
               avatar={
@@ -51,6 +36,7 @@ const ArticleCard = (props) => {
                 <CardMedia
                     className={style.media}
                     image={postImage}
+                    alt={props.post.title}
                     title={props.post.title}
                 />
                 <CardContent>

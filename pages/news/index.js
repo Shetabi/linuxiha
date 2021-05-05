@@ -2,22 +2,28 @@ import React from 'react'
 import style from '../../styles/articles.module.scss';
 import { getAllDynamicPages} from '../../src/lib/markdown-utils';
 import ArticleCard from '../../src/components/card';
-
+import { NextSeo } from 'next-seo';
 import moment from 'jalali-moment'
 
 const News = (props) => {
 
     return (
-        <div className={style.container}>
+        <>
+            <NextSeo
+                title="لینوکسی ها - خبری"
+                description="آخرین اخبار گنو/لینوکس"
+            />
+            <div className={style.container}>
 
-            {props.posts.slice()
-                .filter(post => post.categories.includes("خبری"))
-                .sort(function(a,b){
-                        return new Date(b.jdate) - new Date(a.jdate);
-                    })
-                .map(post => {return {...post, jdate: moment(post.jdate, 'jYYYY-jMM-jDD')}})
-                .map(post => <ArticleCard key={post.title} post={post}/>)}
-        </div>
+                {props.posts.slice()
+                    .filter(post => post.categories.includes("خبری"))
+                    .sort(function(a,b){
+                            return new Date(b.jdate) - new Date(a.jdate);
+                        })
+                    .map(post => {return {...post, jdate: moment(post.jdate, 'jYYYY-jMM-jDD')}})
+                    .map(post => <ArticleCard key={post.title} post={post}/>)}
+            </div>
+        </>
         )
 }
 

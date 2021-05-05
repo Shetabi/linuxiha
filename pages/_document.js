@@ -3,7 +3,7 @@ import Document, {Html, Head, Main, NextScript, DocumentContext} from 'next/docu
 class MyDocument extends Document {
     render() {
         return (
-            <Html>
+            <Html lang={'fa'}>
                 <Head>
                     <link rel="manifest" href="/linuxiha/manifest.json"/>
                     <link rel="apple-touch-icon" href="/linuxiha/icon-512x512.png"/>

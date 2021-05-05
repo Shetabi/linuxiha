@@ -11,6 +11,7 @@ import {faNum, getTimeDifferenceCaption} from '../../src/lib/persian-number';
 import {getAuthorProfile} from '../../src/lib/authors';
 import moment from 'jalali-moment'
 import ArticleProgress from '../../src/components/ArticleProgress';
+import { NextSeo } from 'next-seo';
 
 export default function Article({page}) {
     const router = useRouter();
@@ -33,22 +34,28 @@ export default function Article({page}) {
       const postImage = `${basePath}/images/${featured}`;
       const profileImage = author.image;
       return (
-        <Paper className={style.article}>
-          <img src={`${basePath}/images/${featured}`} alt={title}/>
-          <h1>{title}</h1>
-            <CardHeader
-              avatar={
-                <Avatar aria-label="article" src={profileImage} alt={author.name} className={style.avatar} >
-                </Avatar>
-              }
-              title={author.name}
-              subheader={`${faNum(getTimeDifferenceCaption(page.jdate))} - ${faNum(`زمان خواندن ${page.timeToRead} دقیقه`)}`}
-            />
-         <section className={style.content}>
-            <PrintMarkdown markdown={content} />
-         </section>
-         <ArticleProgress/>
-        </Paper>
+        <>
+          <NextSeo
+              title={title}
+              description={description}
+          />
+          <Paper className={style.article}>
+            <img src={postImage} alt={title}/>
+            <h1>{title}</h1>
+              <CardHeader
+                avatar={
+                  <Avatar aria-label="article" src={profileImage} alt={author.name} className={style.avatar} >
+                  </Avatar>
+                }
+                title={author.name}
+                subheader={`${faNum(getTimeDifferenceCaption(page.jdate))} - ${faNum(`زمان خواندن ${page.timeToRead} دقیقه`)}`}
+              />
+           <section className={style.content}>
+              <PrintMarkdown markdown={content} />
+           </section>
+           <ArticleProgress/>
+          </Paper>
+        </>
       );
 }
 
