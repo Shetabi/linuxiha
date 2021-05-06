@@ -9,8 +9,27 @@ const Home = () => {
 
     return (<> 
             <NextSeo
-                title="لینوکسی ها - خانه"
+                title="لینوکسی ها"
                 description="وبسایت فارسی آموزش و اخبار گنو/لینوکس"
+                openGraph={{
+                    type: 'website',
+                    locale: 'fa_IR',
+                    url: 'https://linuxihaa.ir/',
+                    images: [
+                      {
+                        url: `${basePath}/images/logo.png`,
+                        width: 512,
+                        height: 512,
+                        alt: 'Linuxiha',
+                      }
+                    ],
+                    site_name: 'Linuxiha',
+                  }}
+                  twitter={{
+                    handle: '@handle',
+                    site: '@site',
+                    cardType: 'summary_large_image',
+                  }}
             />
             <section className={style.container}>
             <section className={style.banner}>

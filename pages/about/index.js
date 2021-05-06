@@ -9,6 +9,25 @@ export default function AboutUs() {
             <NextSeo
                 title="لینوکسی ها - درباره ما"
                 description="درباره لینوکسی ها"
+                openGraph={{
+                    type: 'website',
+                    locale: 'fa_IR',
+                    url: 'https://linuxihaa.ir/',
+                    images: [
+                      {
+                        url: `${basePath}/images/logo.png`,
+                        width: 512,
+                        height: 512,
+                        alt: 'Linuxiha',
+                      }
+                    ],
+                    site_name: 'Linuxiha',
+                  }}
+                  twitter={{
+                    handle: '@handle',
+                    site: '@site',
+                    cardType: 'summary_large_image',
+                  }}
             />
             <Paper className={articleStyle.article}>
                 <h1>درباره ما</h1>

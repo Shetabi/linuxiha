@@ -45,7 +45,7 @@ export default function Article({page}) {
                 description: description,
                 images: [
                   {
-                    url: featured,
+                    url: postImage,
                     width: 800,
                     height: 600,
                     alt: title,

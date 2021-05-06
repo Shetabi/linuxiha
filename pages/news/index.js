@@ -12,6 +12,25 @@ const News = (props) => {
             <NextSeo
                 title="لینوکسی ها - خبری"
                 description="آخرین اخبار گنو/لینوکس"
+                openGraph={{
+                    type: 'website',
+                    locale: 'fa_IR',
+                    url: 'https://linuxihaa.ir/',
+                    images: [
+                      {
+                        url: `${basePath}/images/logo.png`,
+                        width: 512,
+                        height: 512,
+                        alt: 'Linuxiha',
+                      }
+                    ],
+                    site_name: 'Linuxiha',
+                  }}
+                  twitter={{
+                    handle: '@handle',
+                    site: '@site',
+                    cardType: 'summary_large_image',
+                  }}
             />
             <div className={style.container}>
 
