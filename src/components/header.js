@@ -3,7 +3,6 @@ import style from '../../styles/header.module.scss'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import {basePath} from '../lib/config';
-import Image from 'next/image';
 
 const Header = () => {
     let pathName = "";
