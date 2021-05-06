@@ -34,11 +34,26 @@ export default function Article({page}) {
       const author = getAuthorProfile(page.user);
       const postImage = `${basePath}/images/${featured}`;
       const profileImage = author.image;
+      console.log(router.pathname, router.asPath, router.basePath);
       return (
         <>
           <NextSeo
               title={title}
               description={description}
+              openGraph={{
+                url: router.pathname,
+                title: title,
+                description: description,
+                images: [
+                  {
+                    url: featured,
+                    width: 800,
+                    height: 600,
+                    alt: title,
+                  }
+                ],
+                site_name: 'Linuxiha',
+              }}
           />
           <Paper className={style.article}>
             <Image

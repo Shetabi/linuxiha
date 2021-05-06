@@ -14,6 +14,14 @@ export default function App({Component, pageProps}) {
             type: 'website',
             locale: 'fa_IR',
             url: 'https://linuxihaa.ir/',
+            images: [
+              {
+                url: 'images/logo.png',
+                width: 512,
+                height: 512,
+                alt: title,
+              }
+            ],
             site_name: 'Linuxiha',
           }}
           twitter={{
