@@ -11,7 +11,7 @@ import {faNum, getTimeDifferenceCaption} from '../../src/lib/persian-number';
 import {getAuthorProfile} from '../../src/lib/authors';
 import moment from 'jalali-moment'
 import ArticleProgress from '../../src/components/ArticleProgress';
-import { NextSeo, BlogJsonLd  } from 'next-seo';
+import { NextSeo, ArticleJsonLd, BreadcrumbJsonLd } from 'next-seo';
 
 export default function Article({page}) {
     const router = useRouter();
@@ -33,6 +33,19 @@ export default function Article({page}) {
       const author = getAuthorProfile(page.user);
       const postImage = `${basePath}/images/${featured}`;
       const profileImage = author.image;
+
+      let subject = '';
+      let subjectPath = '';
+      if(categories.includes("آموزشی")) {
+        subject = 'آموزشی';
+        subjectPath = `${basePath}/learning`
+      }
+      if(categories.includes("خبری"))
+      {
+        subject = 'خبری';
+        subjectPath = `${basePath}/news`
+      }
+
       return (
         <>
           <NextSeo
@@ -53,7 +66,7 @@ export default function Article({page}) {
                 site_name: 'Linuxiha',
               }}
           />
-          <BlogJsonLd
+          <ArticleJsonLd
              url={`${absBasePath}${router.pathname}`}
              title={title}
              images={[
@@ -63,6 +76,25 @@ export default function Article({page}) {
              dateModified={jdate}
              authorName={author.name}
              description={description}
+          />
+          <BreadcrumbJsonLd
+            itemListElements={[
+              {
+                position: 1,
+                name: 'لینوکسی ها',
+                item: subjectPath,
+              },
+              {
+                position: 2,
+                name: subject,
+                item: subjectPath,
+              },
+              {
+                position: 2,
+                name: title,
+                item: `${absBasePath}${router.pathname}`,
+              }
+            ]}
           />
           <Paper className={style.article}>
             <img src={postImage} alt={title}/>
