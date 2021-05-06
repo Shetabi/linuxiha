@@ -5,7 +5,7 @@ import {ThemeProvider} from '@material-ui/core/styles';
 import Menu from '../src/components/menu'
 import Header from '../src/components/header'
 import { DefaultSeo } from 'next-seo';
-import {basePath} from '../../src/lib/config';
+import {basePath} from '../src/lib/config';
 
 export default function App({Component, pageProps}) {
     return (

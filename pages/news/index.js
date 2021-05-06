@@ -3,7 +3,8 @@ import style from '../../styles/articles.module.scss';
 import { getAllDynamicPages} from '../../src/lib/markdown-utils';
 import ArticleCard from '../../src/components/card';
 import { NextSeo } from 'next-seo';
-import moment from 'jalali-moment'
+import moment from 'jalali-moment';
+import {basePath} from '../../src/lib/config'
 
 const News = (props) => {
 

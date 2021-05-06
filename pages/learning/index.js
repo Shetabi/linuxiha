@@ -4,6 +4,7 @@ import { getAllDynamicPages} from '../../src/lib/markdown-utils';
 import ArticleCard from '../../src/components/card';
 import moment from 'jalali-moment';
 import { NextSeo } from 'next-seo';
+import {basePath} from '../../src/lib/config'
 
 const Learning = (props) => {
 
