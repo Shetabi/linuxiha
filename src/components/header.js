@@ -48,14 +48,7 @@ const Header = () => {
         </nav>
 
             <figure className={style.logo}>
-                <Image
-                    className={style.media}
-                    src={`${basePath}/images/logo.png`}
-                    alt="linuxiha-logo"
-                    width="50"
-                    height="50"
-                    layout="intrinsic"
-                />
+                <img src={`${basePath}/images/logo.png`} alt="linuxiha-logo"/>
             </figure>
 
         </header>

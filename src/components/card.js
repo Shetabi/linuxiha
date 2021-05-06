@@ -34,13 +34,10 @@ const ArticleCard = (props) => {
               subheader={`${faNum(getTimeDifferenceCaption(props.post.jdate))} - ${faNum(`زمان خواندن ${props.post.timeToRead} دقیقه`)}`}
             />
             <CardActionArea>
-                <Image
-                    className={style.media}
-                    src={postImage}
-                    alt={props.post.title}
-                    width="500"
-                    height="300"
-                    layout="responsive"
+                <CardMedia
+                    className={classes.media}
+                    image={postImage}
+                    title={props.post.title}
                 />
                 <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">

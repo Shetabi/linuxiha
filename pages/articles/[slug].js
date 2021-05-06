@@ -56,14 +56,7 @@ export default function Article({page}) {
               }}
           />
           <Paper className={style.article}>
-            <Image
-                    className={style.media}
-                    src={postImage}
-                    alt={title}
-                    width="731"
-                    height="341"
-                    layout="responsive"
-                />
+            <img src={postImage} alt={title}/>
             <h1>{title}</h1>
               <CardHeader
                 avatar={
