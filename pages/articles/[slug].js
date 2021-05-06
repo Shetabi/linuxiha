@@ -90,7 +90,7 @@ export default function Article({page}) {
                 item: subjectPath,
               },
               {
-                position: 2,
+                position: 3,
                 name: title,
                 item: `${absBasePath}${router.pathname}`,
               }
