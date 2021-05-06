@@ -2,7 +2,7 @@ import Paper from '@material-ui/core/Paper';
 import React from 'react'
 import articleStyle from '../../styles/article.module.scss';
 import { NextSeo } from 'next-seo';
-import {basePath} from '../../src/lib/config'
+import {basePath, absBasePath} from '../../src/lib/config'
 
 export default function AboutUs() {
     return (
@@ -16,7 +16,7 @@ export default function AboutUs() {
                     url: 'https://linuxihaa.ir/',
                     images: [
                       {
-                        url: `${basePath}/images/logo.png`,
+                        url: `${absBasePath}/images/logo.png`,
                         width: 512,
                         height: 512,
                         alt: 'Linuxiha',

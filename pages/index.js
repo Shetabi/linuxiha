@@ -1,7 +1,7 @@
 import style from '../styles/home.module.scss';
 import Typewriter from '../src/components/typewriter';
 import { useRouter } from 'next/router'
-import {basePath} from '../src/lib/config';
+import {basePath, absBasePath} from '../src/lib/config';
 import { NextSeo } from 'next-seo';
 
 const Home = () => {
@@ -17,7 +17,7 @@ const Home = () => {
                     url: 'https://linuxihaa.ir/',
                     images: [
                       {
-                        url: `${basePath}/images/logo.png`,
+                        url: `${absBasePath}/images/logo.png`,
                         width: 512,
                         height: 512,
                         alt: 'Linuxiha',

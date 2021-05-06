@@ -5,7 +5,7 @@ import {ThemeProvider} from '@material-ui/core/styles';
 import Menu from '../src/components/menu'
 import Header from '../src/components/header'
 import { DefaultSeo } from 'next-seo';
-import {basePath} from '../src/lib/config';
+import {absBasePath} from '../src/lib/config';
 
 export default function App({Component, pageProps}) {
     return (
@@ -17,7 +17,7 @@ export default function App({Component, pageProps}) {
             url: 'https://linuxihaa.ir/',
             images: [
               {
-                url: `${basePath}/images/logo.png`,
+                url: `${absBasePath}/images/logo.png`,
                 width: 512,
                 height: 512,
                 alt: 'Linuxiha',

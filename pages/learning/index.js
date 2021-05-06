@@ -4,7 +4,7 @@ import { getAllDynamicPages} from '../../src/lib/markdown-utils';
 import ArticleCard from '../../src/components/card';
 import moment from 'jalali-moment';
 import { NextSeo } from 'next-seo';
-import {basePath} from '../../src/lib/config'
+import {absBasePath} from '../../src/lib/config'
 
 const Learning = (props) => {
 
@@ -19,7 +19,7 @@ const Learning = (props) => {
                     url: 'https://linuxihaa.ir/',
                     images: [
                       {
-                        url: `${basePath}/images/logo.png`,
+                        url: `${absBasePath}/images/logo.png`,
                         width: 512,
                         height: 512,
                         alt: 'Linuxiha',

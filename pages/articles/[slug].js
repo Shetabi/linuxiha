@@ -4,7 +4,7 @@ import {getDynamicPageContentBySlug, getAllDynamicPages} from '../../src/lib/mar
 import PrintMarkdown from '../../src/components/printMarkDown';
 import style from '../../styles/article.module.scss';
 import Paper from '@material-ui/core/Paper';
-import {basePath} from '../../src/lib/config';
+import {basePath, absBasePath} from '../../src/lib/config';
 import CardHeader from '@material-ui/core/CardHeader';
 import Avatar from '@material-ui/core/Avatar';
 import {faNum, getTimeDifferenceCaption} from '../../src/lib/persian-number';
@@ -45,7 +45,7 @@ export default function Article({page}) {
                 description: description,
                 images: [
                   {
-                    url: postImage,
+                    url: `${absBasePath}/images/${featured}`,
                     width: 800,
                     height: 600,
                     alt: title,

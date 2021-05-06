@@ -1,4 +1,4 @@
 const basePath = '/linuxiha'
-// const basePath = ''
+const absBasePath = 'https://shetabi.github.io/linuxiha';
 
-export {basePath};
+export {basePath, absBasePath};
