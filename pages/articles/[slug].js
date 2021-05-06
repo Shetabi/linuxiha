@@ -57,7 +57,7 @@ export default function Article({page}) {
              url={`${absBasePath}${router.pathname}`}
              title={title}
              images={[
-              `${absBasePath}/images/${featured}`,,
+              `${absBasePath}/images/${featured}`
              ]}
              datePublished={jdate}
              dateModified={jdate}
