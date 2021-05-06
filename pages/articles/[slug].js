@@ -76,6 +76,7 @@ export default function Article({page}) {
              dateModified={jdate}
              authorName={author.name}
              description={description}
+             publisherLogo= {`${absBasePath}/images/logo.png`}
           />
           <BreadcrumbJsonLd
             itemListElements={[
