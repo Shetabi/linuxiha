@@ -11,7 +11,7 @@ import {faNum, getTimeDifferenceCaption} from '../../src/lib/persian-number';
 import {getAuthorProfile} from '../../src/lib/authors';
 import moment from 'jalali-moment'
 import ArticleProgress from '../../src/components/ArticleProgress';
-import { NextSeo } from 'next-seo';
+import { NextSeo, BlogJsonLd  } from 'next-seo';
 
 export default function Article({page}) {
     const router = useRouter();
@@ -33,7 +33,6 @@ export default function Article({page}) {
       const author = getAuthorProfile(page.user);
       const postImage = `${basePath}/images/${featured}`;
       const profileImage = author.image;
-      console.log(router.pathname, router.asPath, router.basePath);
       return (
         <>
           <NextSeo
@@ -53,6 +52,17 @@ export default function Article({page}) {
                 ],
                 site_name: 'Linuxiha',
               }}
+          />
+          <BlogJsonLd
+             url={`${absBasePath}${router.pathname}`}
+             title={title}
+             images={[
+              `${absBasePath}/images/${featured}`,,
+             ]}
+             datePublished={jdate}
+             dateModified={jdate}
+             authorName={author.name}
+             description={description}
           />
           <Paper className={style.article}>
             <img src={postImage} alt={title}/>
