@@ -11,7 +11,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import Image from 'next/image'
 
 const ArticleCard = (props) => {
     const author = getAuthorProfile(props.post.user);
@@ -35,7 +34,7 @@ const ArticleCard = (props) => {
             />
             <CardActionArea>
                 <CardMedia
-                    className={classes.media}
+                    className={style.media}
                     image={postImage}
                     title={props.post.title}
                 />
