@@ -67,7 +67,7 @@ export default function Article({page}) {
               }}
           />
           <ArticleJsonLd
-             url={`${absBasePath}${router.pathname}`}
+             url={`${absBasePath}${router.asPath}`}
              title={title}
              images={[
               `${absBasePath}/images/${featured}`
@@ -82,7 +82,7 @@ export default function Article({page}) {
               {
                 position: 1,
                 name: 'لینوکسی ها',
-                item: subjectPath,
+                item: absBasePath,
               },
               {
                 position: 2,
@@ -92,7 +92,7 @@ export default function Article({page}) {
               {
                 position: 3,
                 name: title,
-                item: `${absBasePath}${router.pathname}`,
+                item: `${absBasePath}${router.asPath}`,
               }
             ]}
           />
