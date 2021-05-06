@@ -75,6 +75,7 @@ export default function Article({page}) {
              datePublished={jdate}
              dateModified={jdate}
              authorName={author.name}
+             publisherName='Linuxiha'
              description={description}
              publisherLogo= {`${absBasePath}/images/logo.png`}
           />
