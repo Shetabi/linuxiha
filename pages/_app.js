@@ -19,7 +19,7 @@ export default function App({Component, pageProps}) {
                 url: 'images/logo.png',
                 width: 512,
                 height: 512,
-                alt: title,
+                alt: 'Linuxiha',
               }
             ],
             site_name: 'Linuxiha',
