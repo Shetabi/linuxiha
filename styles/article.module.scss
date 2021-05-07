@@ -43,12 +43,15 @@
     .text {
         background-color: $code;
         li {
-            padding-right: 1rem;
+            margin-right: 1rem;
         }
     }
 
     ul {
         list-style-type: circle;
+        li {
+            margin-right: 0.5rem;
+        }
     }
 
     h1 {
