@@ -9,6 +9,7 @@ import matter from 'gray-matter';
  */
 const pagesDirectory = join(process.cwd(), '_pages');
 const dynamicPagesDirectory = join(pagesDirectory, 'dynamic');
+const staticPageDirectory = join(pagesDirectory, 'static');
 
 /**
  * Gets all the files (slugs) in a directory
@@ -60,6 +61,10 @@ export function getPageContentBySlug(slug, fields = []) {
  */
 export function getDynamicPageContentBySlug(slug, fields = []) {
   return getBySlug(dynamicPagesDirectory, slug, fields);
+}
+
+export function getStaticPageContentBySlug(slug, fields =[]) {
+  return getBySlug(staticPageDirectory, slug, fields);
 }
 
 /**

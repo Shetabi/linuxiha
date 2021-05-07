@@ -8,7 +8,7 @@ const Header = () => {
     let pathName = "";
 
     const router = useRouter();
-    const path = router.pathname;
+    const path = router.asPath;
     
     switch(path) {
         case "/":

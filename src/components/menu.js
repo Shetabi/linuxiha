@@ -7,7 +7,7 @@ import {basePath} from '../lib/config'
 let prevScrollpos = 0;
 const Menu = () => {
     const router = useRouter();
-    const path = router.pathname;
+    const path = router.asPath;
 
 
     useEffect(() => {

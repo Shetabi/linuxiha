@@ -4,7 +4,7 @@ jdate: '1395-02-02'
 user: aminqm70
 title: "دانلود کنید:\ اوبونتو 16.04 منتشر شد"
 categories:
-- آموزشی
+- خبری
 tags:
 - اوبونتو
 featured: ubuntu-16.04.jpg

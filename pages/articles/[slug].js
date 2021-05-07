@@ -142,7 +142,7 @@ export async function getStaticProps({ params }) {
     const posts = getAllDynamicPages(['slug']);
     const paths = posts.map(({ slug }) => ({
       params: {
-        slug,
+        slug: slug,
       },
     }));
     return {

@@ -69,7 +69,8 @@ const Learning = (props) => {
                             return new Date(b.jdate) - new Date(a.jdate);
                         })
                     .slice(0, (5 * page))
-                    .map(post => {return {...post, jdate: moment(post.jdate, 'jYYYY-jMM-jDD')}}).map(post => <ArticleCard key={post.title} post={post}/>)}
+                    .map(post => {return {...post, jdate: moment(post.jdate, 'jYYYY-jMM-jDD')}})
+                    .map(post => <ArticleCard key={post.title} post={post}/>)}
             </div>
         </>
     )
