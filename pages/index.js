@@ -3,21 +3,8 @@ import Typewriter from '../src/components/typewriter';
 import { useRouter } from 'next/router'
 import {basePath, absBasePath} from '../src/lib/config';
 import { NextSeo } from 'next-seo';
-// import {useEffect} from 'react';
 const Home = () => {
     const router = useRouter()
-    // useEffect(() => {
-
-    //     if (!window.matchMedia('(display-mode: standalone)').matches) {  
-    //         require('../src/lib/addtohomescreen').addToHomescreen({
-    //             appID: 'linuxiha.ath',
-    //             message: 'برای اضافه کردن لینوکسی ها به خانه، %icon را لمس کنید و بعد گزینه <strong>Add to Home Screen</strong> را انتخاب کنید.',
-    //             modal: false,
-    //             mandatory: false,
-    //         });
-    //     }  
-
-    //   }, [router]);
     return (<> 
             <NextSeo
                 title="لینوکسی ها"
